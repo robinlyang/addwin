@@ -16,5 +16,24 @@ namespace addwin
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void number1Lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            double total, x, y;
+            x = Convert.ToDouble(number1TxtBox.Text);
+            y = Convert.ToDouble(number2TxtBox.Text);
+            total = x + y;
+            totalTxtBox.Text = total.ToString();
+        }
     }
 }
